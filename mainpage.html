@@ -31,14 +31,16 @@
                 </defs>
               </svg>
             </div>
-            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio</h2>
+            <a href="mainpage.html">
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio</h2>
+            </a>
           </div>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
               <a class="text-white text-sm font-medium leading-normal" href="#">About</a>
               <a class="text-white text-sm font-medium leading-normal" href="#">Projects</a>
               <a class="text-white text-sm font-medium leading-normal" href="#">Certificates</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Contact</a>
+              <a class="text-white text-sm font-medium leading-normal" href="contactme.html">Contact</a>
             </div>
             <div class="flex gap-2">
               <a
@@ -82,13 +84,13 @@
                 >
                   <div class="flex flex-col gap-2 text-left">
                     <h1
+                      id="main-typing"
                       class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
                     >
-                      Hi, I'm ItsMoakey, a Student
+                      <!-- Typing effect will populate here -->
                     </h1>
-                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                      I make programs that are simple, intuitive, and beautiful. I'm passionate about creating user-centered experiences that solve real
-                      problems and make a positive impact on people's lives.
+                    <h2 id="sub-typing" class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      <!-- Typing effect will populate here -->
                     </h2>
                   </div>
                   <div class="flex-wrap gap-3 flex">
@@ -113,73 +115,117 @@
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured Projects</h2>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
               <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFp2Ik-kJ0dhhENunOruPr9QFpLbqUUHT_chShB5ykYSgK8K5ksCIDZ1K-4ikph9yKBQnzSFGoJpRbdbItsLjOpx2B7b-Jt4aaTn2ogXIxMQ3fPbbTIi69QtwhSqZIUW1sYfF3-X-VGU1yxC_skT3z-ji2jo9lr0Tcjon1F9BUPLOhzQpTSXH6lu5fbc7eqpoqn8PlrDDGeJ_koeyZ3Z6epZhmyOFV59NbmKi0olbUS5XSEH56NFBpcGVbNDXJ9ub7qqEKSrIKAdCd");'
-                ></div>
+                <div class="w-full aspect-video rounded-xl overflow-hidden bg-center bg-no-repeat bg-cover">
+                  <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFp2Ik-kJ0dhhENunOruPr9QFpLbqUUHT_chShB5ykYSgK8K5ksCIDZ1K-4ikph9yKBQnzSFGoJpRbdbItsLjOpx2B7b-Jt4aaTn2ogXIxMQ3fPbbTIi69QtwhSqZIUW1sYfF3-X-VGU1yxC_skT3z-ji2jo9lr0Tcjon1F9BUPLOhzQpTSXH6lu5fbc7eqpoqn8PlrDDGeJ_koeyZ3Z6epZhmyOFV59NbmKi0olbUS5XSEH56NFBpcGVbNDXJ9ub7qqEKSrIKAdCd"
+                    alt="Mobile App Design for a Fitness Tracker"
+                    class="w-full h-full object-cover rounded-xl"
+                  />
+                </div>
                 <div>
-                  <p class="text-white text-base font-medium leading-normal">Mobile App Design for a Fitness Tracker</p>
-                  <p class="text-[#adadad] text-sm font-normal leading-normal">A mobile app that helps users track their fitness goals and progress.</p>
+                  <p class="text-white text-base font-medium leading-normal">Robotic Arm</p>
+                  <p class="text-[#adadad] text-sm font-normal leading-normal">A Small prototype robotic arm.</p>
                 </div>
               </div>
               <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAfvqXN9GKoYQ9l_FMbvzMZBW2Io_grDWrUhwqKTk2dIiJuGFjbzy3ekMqPwBvfFV5Y2BQ7ZL7E73O9Z8SbGcJrY28VuEHs5i3gy1FqrA81X1i2KPcfKtZHrUs2oEr1DhyZS18hrGHuMPsuYAFxaBI8V4-PO6uSIlz2Wp_gPlUeZH31zvKzxQp-UJAsQ6TlmkbuxRcLkHaD-0-nMnd9dd54nOF9hbaulmSRymcU3_UnzKlbpxask3P7I_TuE3Zr88GORAs9fzNK-H_F");'
-                ></div>
+                <div class="w-full aspect-video rounded-xl overflow-hidden bg-center bg-no-repeat bg-cover">
+                  <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfvqXN9GKoYQ9l_FMbvzMZBW2Io_grDWrUhwqKTk2dIiJuGFjbzy3ekMqPwBvfFV5Y2BQ7ZL7E73O9Z8SbGcJrY28VuEHs5i3gy1FqrA81X1i2KPcfKtZHrUs2oEr1DhyZS18hrGHuMPsuYAFxaBI8V4-PO6uSIlz2Wp_gPlUeZH31zvKzxQp-UJAsQ6TlmkbuxRcLkHaD-0-nMnd9dd54nOF9hbaulmSRymcU3_UnzKlbpxask3P7I_TuE3Zr88GORAs9fzNK-H_F"
+                    alt="Website Redesign for a Local Coffee Shop"
+                    class="w-full h-full object-cover rounded-xl"
+                  />
+                </div>
                 <div>
-                  <p class="text-white text-base font-medium leading-normal">Website Redesign for a Local Coffee Shop</p>
+                  <p class="text-white text-base font-medium leading-normal">Portfolio Website</p>
                   <p class="text-[#adadad] text-sm font-normal leading-normal">
-                    A website redesign for a local coffee shop to improve their online presence and customer engagement.
+                    The Portfolio Website is a personal website that showcases my work and skills as a programmer.
                   </p>
                 </div>
               </div>
               <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCScPcaLqnPPoS4bf1P0JEe5aX9edJSzJYgaGGeT5lhofrF7pitcOVgTjGj4rSXAsv3VIxOTJb91O8oT8J0BvzLmEQe5bzCKsSRqvfa3u0CXtSZoSZfRKUM8QFiJd3a25_6F-blNdga_4UB-DI0W1JgGR6ORzcPoggiVSyci3mqT88LQemEfcAnF4yuAoCkcZK0YZUl_HqFOa4Sbk9w5kJXu2-7JJrdwU5vIY_S5mf4Md2dj9JbFcu0OqeP8zCJVvMrC9Yj9Mgn1Oiw");'
-                ></div>
+                <div class="w-full aspect-video rounded-xl overflow-hidden bg-center bg-no-repeat bg-cover">
+                  <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCScPcaLqnPPoS4bf1P0JEe5aX9edJSzJYgaGGeT5lhofrF7pitcOVgTjGj4rSXAsv3VIxOTJb91O8oT8J0BvzLmEQe5bzCKsSRqvfa3u0CXtSZoSZfRKUM8QFiJd3a25_6F-blNdga_4UB-DI0W1JgGR6ORzcPoggiVSyci3mqT88LQemEfcAnF4yuAoCkcZK0YZUl_HqFOa4Sbk9w5kJXu2-7JJrdwU5vIY_S5mf4Md2dj9JbFcu0OqeP8zCJVvMrC9Yj9Mgn1Oiw"
+                    alt="UI/UX Design for a Productivity Tool"
+                    class="w-full h-full object-cover rounded-xl"
+                  />
+                </div>
                 <div>
-                  <p class="text-white text-base font-medium leading-normal">UI/UX Design for a Productivity Tool</p>
-                  <p class="text-[#adadad] text-sm font-normal leading-normal">A UI/UX design for a productivity tool that helps users manage their tasks and projects.</p>
+                  <p class="text-white text-base font-medium leading-normal">The Hunting Game</p>
+                  <p class="text-[#adadad] text-sm font-normal leading-normal">The Hunting Game made in Roblox which has 0 Visits.</p>
                 </div>
               </div>
             </div>
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured Certificate</h2>
             <div class="p-4 @container">
               <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDXZYYhrM4eZqNQBKeZUBWp80w7vKjp7w_nINwZk8ciI2YD3lzMOHyc0BtdYls-nXMPWwfwmyCkPl3NvsYw3dCbaZWEE9yOTtlAyvDL3mR0TI5sDmFnSX_6hGJvUIea40HyMeAzivBjMvlK4NkHPoBferhqcHTPrQ-8dsT0aa3dokCJxH0JW8RmJSlStMgMyQTUavsRUh5i4z-03TfcSWrC6gJYyD1MrM2cZgRZQeHugtOIj4pLJNF1HKpDIpLW2BKjHon4MQZW-cO");'
-                ></div>
+                  <div class="w-full aspect-video rounded-xl overflow-hidden bg-[#232323] flex items-center justify-center">
+                    <img
+                      src="freeCodeCamp1.png"
+                      alt="Javascript Algorithms and Data Structure Certificate"
+                      class="w-full h-full object-contain rounded-xl"
+                    />
+                  </div>
                 <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
-                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Certified UX Designer</p>
-                  <div class="flex items-end gap-3 justify-between"><p class="text-[#adadad] text-base font-normal leading-normal">Issued by Design Institute</p></div>
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Javascript Algorithms and Data Structure</p>
+                  <div class="flex items-end gap-3 justify-between"><p class="text-[#adadad] text-base font-normal leading-normal">Issued by freeCodeCamp.org</p></div>
                 </div>
               </div>
             </div>
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Me</h2>
             <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-              I'm a programmer with over 3 years of experience in the industry. I've worked with a variety of clients, from startups to large corporations, and have a proven
-              track record of delivering high-quality designs that meet business objectives and user needs. I'm proficient in a range of design tools and methodologies, including
-              user research, wireframing, prototyping, and UI design. I'm also a strong communicator and collaborator, and enjoy working with cross-functional teams to bring
-              products to life.
+              I'm a programmer with over 3 years of experience in the game development. I've worked with a variety projects, from techdemos to fully fledged games, and have a proven
+              track record of delivering high-quality gameplay that meet satisfy the user. I'm proficient in a range of game engine and methodologies, including
+              Unity, Unreal Engine and Roblox Studio. I'm also a strong communicator and collaborator, and enjoy working with cross-functional teams to bring
+              projects to life.
             </p>
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact</h2>
             <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-              I'm always open to new opportunities and collaborations. If you'd like to discuss a project or just say hello, feel free to reach out to me at
-              sirajirath@gmail.com.
+              I'm always open to new opportunities. If you'd like to discuss a project or just say hello, feel free to reach out to me at
+              <a href="mailto:sirajirath@gmail.com" class="underline text-[#adadad] hover:text-white">sirajirath@gmail.com</a>.
             </p>
           </div>
         </div>
         <footer class="flex justify-center">
           <div class="flex max-w-[960px] flex-1 flex-col">
             <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-              <p class="text-[#adadad] text-base font-normal leading-normal">@2024 Ryan Designer. All rights reserved.</p>
+              <p class="text-[#adadad] text-base font-normal leading-normal">@2025 Sirajirath Boonmatham. All rights reserved.</p>
             </footer>
           </div>
         </footer>
       </div>
     </div>
+    <script>
+      // Typing effect utility
+      function typeText(element, text, speed = 30, callback) {
+        let i = 0;
+        function type() {
+          if (i <= text.length) {
+            element.textContent = text.slice(0, i);
+            i++;
+            setTimeout(type, speed);
+          } else if (callback) {
+            callback();
+          }
+        }
+        type();
+      }
+
+      window.addEventListener('DOMContentLoaded', () => {
+        const mainText = "Hi, I'm Sirajirath Boonmatham, a Student.";
+        const subText = "I make programs that are simple, intuitive, and beautiful. I'm passionate about creating user-centered experiences that solve real problems and make a positive impact on people's lives.";
+        const btnText = "View Projects";
+
+        const mainEl = document.getElementById('main-typing');
+        const subEl = document.getElementById('sub-typing');
+        const btnEl = document.getElementById('btn-typing');
+
+        typeText(mainEl, mainText, 30, () => {
+          typeText(subEl, subText, 15, () => {
+            typeText(btnEl, btnText, 40);
+          });
+        });
+      });
+    </script>
   </body>
 </html>

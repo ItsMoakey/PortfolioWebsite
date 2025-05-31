@@ -37,9 +37,10 @@
           </div>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
-              <a class="text-white text-sm font-medium leading-normal" href="#">Projects</a>
               <a class="text-white text-sm font-medium leading-normal" href="#">About</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Contact</a>
+              <a class="text-white text-sm font-medium leading-normal" href="projects.html">Projects</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Certificates</a>
+              <a class="text-white text-sm font-medium leading-normal" href="contactme.html">Contact</a>
             </div>
             <div class="flex gap-2">
               <a
@@ -57,7 +58,7 @@
                 </div>
               </a>
               <a
-                href="mailto:sirajirath@gmail.com"
+                href="contactme.html"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#363636] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
@@ -126,20 +127,27 @@
             </div>
           </div>
         </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <p class="text-[#adadad] text-base font-normal leading-normal">@2025 Sirajirath Boonmatham. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
       </div>
     </div>
+    <script>
+      document.getElementById('contact-submit').addEventListener('click', function () {
+        const name = document.getElementById('contact-name').value.trim();
+        const email = document.getElementById('contact-email').value.trim();
+        const message = document.getElementById('contact-message').value.trim();
+
+        const mailto = `mailto:sirajirath@gmail.com?subject=Contact from ${encodeURIComponent(name || 'Portfolio Visitor')}&body=${encodeURIComponent(
+          `Name: ${name}\nEmail: ${email}\n\n${message}`
+        )}`;
+
+        window.location.href = mailto;
+      });
+    </script>
   </body>
-  <script>
-    document.getElementById('contact-submit').addEventListener('click', function () {
-      const name = document.getElementById('contact-name').value.trim();
-      const email = document.getElementById('contact-email').value.trim();
-      const message = document.getElementById('contact-message').value.trim();
-
-      const mailto = `mailto:sirajirath@gmail.com?subject=Contact from ${encodeURIComponent(name || 'Portfolio Visitor')}&body=${encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\n\n${message}`
-      )}`;
-
-      window.location.href = mailto;
-    });
-  </script>
 </html>

@@ -87,7 +87,7 @@
               <div class="@[480px]:p-4">
                 <div
                   class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
-                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFQR25e1CJANPtMxF60ZMWtA1H-uKkQTmlKTq3fmRhB6VcFodR1wBYX9avmaNi70iaA_2VC5FQg5llMF2CGzKFfRPAal8d70mGxki7SOZjjIqEhj1CEk1BtHSwUFpEskXO4x5HoSfzhPeH7Gc8aAkIEnJYc4XGuhri_-ZMZbCNGeQ1H4aioGiLTHjIENQHql1hbcPOCG3aH6xhl8eehkNUeQPDPgb_qtJB-Hpa1T_LC13mtWM1y7vM2E6TDdNRB_kWel4HeaU8_GTs");'
+                  style='background: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("backgroundstars.png"); background-size: cover; background-position: center;'
                 >
                   <div class="flex flex-col gap-2 text-left">
                     <h1
@@ -125,7 +125,7 @@
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured Projects</h2>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
               <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full aspect-video rounded-xl overflow-hidden bg-center bg-no-repeat bg-cover">
+                <div class="w-full aspect-video rounded-xl overflow-hidden bg-[#232323] flex items-center justify-center">
                   <img
                     src="arm.png"
                     alt="Robotic Arm Prototype"
@@ -138,7 +138,7 @@
                 </div>
               </div>
               <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full aspect-video rounded-xl overflow-hidden bg-center bg-no-repeat bg-cover">
+                <div class="w-full aspect-video rounded-xl overflow-hidden bg-[#232323] flex items-center justify-center">
                   <img
                     src="portfoliowebsite.png"
                     alt="Portfolio Website"
@@ -153,7 +153,7 @@
                 </div>
               </div>
               <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full aspect-video rounded-xl overflow-hidden bg-center bg-no-repeat bg-cover">
+                <div class="w-full aspect-video rounded-xl overflow-hidden bg-[#232323] flex items-center justify-center">
                   <img
                     src="robloxgamedev.png"
                     alt="The Hunting Game"
@@ -293,7 +293,8 @@
         let i = 0;
         function type() {
           if (i <= text.length) {
-            element.textContent = text.slice(0, i);
+            // Use innerHTML to support <br> tags for line breaks
+            element.innerHTML = text.slice(0, i);
             i++;
             setTimeout(type, speed);
           } else if (callback) {
@@ -303,9 +304,8 @@
         type();
       }
 
-      window.addEventListener('DOMContentLoaded', () => {
-        const mainText = "Hi, I'm Sirajirath Boonmatham, a Student.";
-        const subText = "I create games and websites that are fun and engaging. I love to learn new things and share my knowledge with others. I am always looking for new challenges and opportunities to grow.";
+        const mainText = "Hi, I'm Sirajirath Boonmatham,<br>a Student in Thailand.";
+        const subText = "I create games, programs and websites that are fun and engaging. I love to learn new things and share my knowledge with others. I am always looking for new challenges and opportunities to grow.";
 
         const mainEl = document.getElementById('main-typing');
         const subEl = document.getElementById('sub-typing');
@@ -316,7 +316,7 @@
             typeText(btnEl, btnText, 40);
           });
         });
-      });
+      ;
 
       // Modal logic for featured certificate
       // Add modal HTML to body if not present
